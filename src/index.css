@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .App {
+  transform: translateX(256px);
+  transition-duration: 330ms;
+}
+
+.calcheight {
+  height: calc(100vh - 80px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.btn {
+  @apply bg-orange py-2.5 px-4 text-white font-normal text-base flex items-center justify-center gap-2 rounded cursor-pointer hover:bg-orange-light;
+
+}
+
+
+@media (max-width : 786px) {
+  .saveBtn {
+    @apply bg-orange hover:bg-orange-light 
+  }
+
+  .header {
+    @apply h-10 flex flex-row items-center justify-between bg-dark-gray-2 text-white;
+  }
+
+  .logo {
+    @apply text-lg font-bold tracking-widest mr-12;
+  }
+
+  
+}
