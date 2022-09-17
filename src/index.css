@@ -32,6 +32,9 @@ code {
 .calcheight {
   height: calc(100vh - 80px);
 }
+.calcheightmob {
+  height: calc(100vh - 200px);
+}
 
 .overlay {
   position: fixed;
@@ -49,18 +52,4 @@ code {
 }
 
 
-@media (max-width : 786px) {
-  .saveBtn {
-    @apply bg-orange hover:bg-orange-light 
-  }
 
-  .header {
-    @apply h-10 flex flex-row items-center justify-between bg-dark-gray-2 text-white;
-  }
-
-  .logo {
-    @apply text-lg font-bold tracking-widest mr-12;
-  }
-
-  
-}

@@ -26,7 +26,7 @@ const AddDocument = ({setShowModal}) => {
         ReactDOM.createPortal(
         <>
         <div className="overlay" onClick={() => setShowModal(false)}></div>
-        <div className=" w-96 h-60 p-6 bg-white rounded animate-pop-in fixed top-0 left-0 right-0 bottom-0 m-auto ">
+        <div className="w-96 h-60 p-6 bg-white rounded animate-pop-in fixed -top-1/3 -left-64 right-0 bottom-64 m-auto">
           <h4 className="text-dark-gray text-xl mb-4 font-bold">
             Create new Document
           </h4>

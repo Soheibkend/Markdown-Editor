@@ -19,6 +19,10 @@ module.exports = {
         "orange-light": "#F39765",
       },
     },
+    screens: {
+      'mob': {'max': '767px'},
+      'md': '768px',
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import {FaTimes} from 'react-icons/fa';
 import {IoIosAdd} from 'react-icons/io';
 import MarkdownContext from "../context/MarkdownContext";
 import Item from "./Item";
